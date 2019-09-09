@@ -24,7 +24,7 @@ import { FormGroup } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot(),
+    NgbModule,
     FormsModule, 
     ReactiveFormsModule,
     RouterModule.forRoot([
