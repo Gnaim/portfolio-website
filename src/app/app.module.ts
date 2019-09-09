@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { SliderComponent } from './slider/slider.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormGroup } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { SliderComponent } from './slider/slider.component';
     HomeComponent,
     NavbarComponent,
     SliderComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule.forRoot(),
+    FormsModule, 
+    ReactiveFormsModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
     //  { path: 'page-test', component: PageTestComponent}, 
